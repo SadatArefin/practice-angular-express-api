@@ -9,7 +9,8 @@ import { TutorialDetailsComponent } from './components/tutorial-details/tutorial
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +19,10 @@ import { ProductsListComponent } from './components/products-list/products-list.
     TutorialDetailsComponent,
     ProductDetailsComponent,
     TutorialsListComponent,
-    ProductsListComponent
+    ProductsListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
