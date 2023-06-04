@@ -4,4 +4,5 @@ export class Product {
   description?: string;
   price?: Number;
   quantity?: Number;
+  status?: boolean;
 }
